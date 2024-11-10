@@ -1,0 +1,88 @@
+.app {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.date-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.date-navigation button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.date-navigation button:hover {
+  background-color: #005f8d;
+}
+
+.date-navigation p {
+  font-size: 1.2rem;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+.next-prayer {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+.prayer-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.prayer-time {
+  width: 180px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.prayer-time:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.prayer-time:nth-child(1),
+.prayer-time:nth-child(2),
+.prayer-time:nth-child(3) {
+  background-color: #ffeb3b; /* Jaune pour Fajr, Sunrise, Dhuhr */
+}
+
+.prayer-time:nth-child(4),
+.prayer-time:nth-child(5),
+.prayer-time:nth-child(6) {
+  background-color: #4caf50; /* Vert pour Asr, Maghrib, Isha */
+}
+
+.prayer-time p {
+  margin: 0;
+  font-weight: bold;
+}
